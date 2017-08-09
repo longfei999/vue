@@ -3,8 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueLazyLoad from 'vue-lazyload'
+import '../static/css/base.css'
+import '../static/css/product.css'
+import '../static/css/login.css'
+import '../static/css/checkout.css'
 
 Vue.config.productionTip = false
+Vue.use(VueLazyLoad,{
+  loading:'/static/loading/loading-spinning-bubbles.svg'
+})
 
 /* eslint-disable no-new */
 new Vue({
